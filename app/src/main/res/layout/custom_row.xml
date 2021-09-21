@@ -7,7 +7,8 @@
     android:layout_height="wrap_content"
     android:paddingTop="12sp"
     android:paddingLeft="24sp"
-    android:paddingRight="24sp">
+    android:paddingRight="24sp"
+    android:id="@+id/rowLayout">
 
     <TextView
         android:id="@+id/id_txt"
