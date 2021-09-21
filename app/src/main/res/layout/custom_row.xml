@@ -5,12 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="24sp">
+    android:paddingTop="12sp"
+    android:paddingLeft="24sp"
+    android:paddingRight="24sp">
 
     <TextView
         android:id="@+id/id_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:minWidth="30dp"
         android:text="1"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -22,7 +25,7 @@
         android:id="@+id/firstName_txt"
         android:layout_width="80sp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="10dp"
         android:text="John"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -34,7 +37,7 @@
         android:id="@+id/lastName_txt"
         android:layout_width="80sp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="6dp"
+        android:layout_marginStart="10dp"
         android:text="Doe"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -46,7 +49,7 @@
         android:id="@+id/age_txt"
         android:layout_width="50sp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="6dp"
+        android:layout_marginStart="10dp"
         android:text="(21)"
         android:textSize="20sp"
         android:textStyle="bold"
