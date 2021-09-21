@@ -5,13 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.roomdatabasetutorial.R
-import com.example.roomdatabasetutorial.data.UserViewModel
+import com.example.roomdatabasetutorial.viewmodel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_list.view.*
 
 

@@ -11,14 +11,14 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.roomdatabasetutorial.R
-import com.example.roomdatabasetutorial.data.User
-import com.example.roomdatabasetutorial.data.UserViewModel
+import com.example.roomdatabasetutorial.model.User
+import com.example.roomdatabasetutorial.viewmodel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_add.view.*
 
 class AddFragment : Fragment() {
 
-    private lateinit var mUserViewModel:UserViewModel
+    private lateinit var mUserViewModel: UserViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

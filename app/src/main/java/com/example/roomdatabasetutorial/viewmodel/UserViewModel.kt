@@ -1,9 +1,12 @@
-package com.example.roomdatabasetutorial.data
+package com.example.roomdatabasetutorial.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
+import com.example.roomdatabasetutorial.data.UserDatabase
+import com.example.roomdatabasetutorial.repository.UserRepository
+import com.example.roomdatabasetutorial.model.User
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -18,7 +21,7 @@ class UserViewModel(application: Application):AndroidViewModel(application){
         readAllData = repository.readAllData
     }
 
-    fun addUser(user:User)
+    fun addUser(user: User)
     {
         viewModelScope.launch(Dispatchers.IO) {
             repository.addUser(user)
