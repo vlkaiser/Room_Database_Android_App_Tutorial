@@ -85,7 +85,12 @@ class UpdateFragment : Fragment() {
     private fun deleteUser() {
         val builder = AlertDialog.Builder(requireContext())
         builder.setPositiveButton("Yes"){ _, _ ->
-
+            mUserViewModel.deleteUser(args.currentUser)
+            Toast.makeText(
+                requireContext(),
+                "Successfully removed entry: ${args.currentUser.firstName}",
+                Toast.LENGTH_LONG).show()
+            findNavController().navigate(R.id.action_updateFragment_to_listFragment)
 
         }
         builder.setNegativeButton("No") { _, _ -> }
